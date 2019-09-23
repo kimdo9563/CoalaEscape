@@ -70,7 +70,7 @@ room3 = game.createRoom("room3", "room3_background.png")
 var KindOfRoom = [room1, room2, room3]  // Room List 입력, 필요 시 수정
 var CountArrowClick = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-initRoomLight(KindOfRoom, light = 0.1)// 방 밝기 초기화
+initRoomLight(KindOfRoom, light = 0.4)// 방 밝기 초기화
 arrowCreator(KindOfRoom)  // 각 Room마다 Arrow 생성
 
 
@@ -126,7 +126,7 @@ KindOfRoom[0].locateObject(KindOfRoom[0].computer, 900, 400)
 
 KindOfRoom[0].computer.onClick = function () {
     if (KindOfRoom[0].computer.isClosed()) {
-        printMessage("잠겨있다.. 키보드도 없고.. 어떻게 풀지?")
+        printMessage("Scan8282... 빨리빨리..?")
         showImageViewer("logOn.png", "")
     } else if (KindOfRoom[0].computer.isOpened()) {
         if (compareClickCounter(CountArrowClick)) {  //"L", "L", "R", "L", "R", "R", "R", "L", "R", "L"
@@ -145,6 +145,7 @@ KindOfRoom[0].message.setWidth(40);
 KindOfRoom[0].locateObject(KindOfRoom[0].message, 750, 550)
 
 KindOfRoom[0].message.onClick = function () {
+    printMessage("..뭐라는거야...")
     showImageViewer("innerMessage.png", "")
 }
 
@@ -156,7 +157,7 @@ KindOfRoom[0].locateObject(KindOfRoom[0].battery, 500, 600)
 KindOfRoom[0].battery.setItemDescription("전원을 넣는데 사용한다.")
 KindOfRoom[0].battery.onClick = function () { 
     KindOfRoom[0].battery.pick()
-    printMessage("..배터리가 왜 떨어져있지..?")
+    printMessage("배터리를 주었다!")
 }
 
 // Board
@@ -165,6 +166,7 @@ KindOfRoom[0].board.setWidth(350);
 KindOfRoom[0].locateObject(KindOfRoom[0].board, 400, 250)
 
 KindOfRoom[0].board.onClick = function () { 
+    printMessage("곰이 문이된다고...?")
     showImageViewer("question.png", "")
 }
 
@@ -266,7 +268,7 @@ KindOfRoom[1].broken.onOpen = function () {
     KindOfRoom[1].shapeStar.show()
 }
 KindOfRoom[1].broken.onClick = function () {
-    printMessage("벽에 금이 있다..")
+    printMessage("벽에 금이 있다.. 내려치면 부셔질 것 같은데..?")
     if (game.getHandItem() == KindOfRoom[1].hammar) {
         printMessage("벽이 부서졌다 !")
         KindOfRoom[1].broken.open()
