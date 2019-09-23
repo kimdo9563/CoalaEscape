@@ -1,0 +1,23 @@
+최초 실행 시 ; 방 불빛 번쩍번쩍. 라이트 나감.
+
+
+
+교수님 등장 ->문제 제시
+
+엔딩 -> (진)엔딩 이스터에그
+
+서랍장
+액자 뒤 금고
+
+
+암호 문제 (hard)
+숫자 조합문제 (여러 곳 분산) (super EZ)
+동영상 (집중력 문제) (semi-hard)
+문제적 남자 ()
+
+불키고 -> 쪽지 확인 -> 4가지 모형 찾고 -> 하트로 컴퓨터 풀리면
+-> LOVE입력 -> 열쇠에 대한 관문 -> 열쇠
+
+https://github.com/coalasw/CoalaEscape/wiki/4.-API-%EB%AA%A9%EB%A1%9D#gameclear
+https://github.com/coalasw/CoalaEscape/blob/master/Example0/code.js#L84
+https://www.shutterstock.com/ko/image-photo/old-key-isolated-on-white-background-339377750?src=WhzEWgz1sbD3LfKt8IDpvA-1-27
